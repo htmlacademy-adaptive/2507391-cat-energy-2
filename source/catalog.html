@@ -5,15 +5,60 @@
     <title>CAT ENERGY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="scripts/index.js" defer></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicons/android-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicons/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <div class="wrapper"></div>
   <body>
     <header class="header">
-      <h1 class="visually-hidden">CAT ENERGY</h1>
       <a class="header__logo" href="./index.html">
-        <img class="header__logo-image" alt="Логотип CAT ENERGY" />
+        <picture>
+          <source media="(min-width: 1200px)" width="70" hight="59" type="image/svg+xml" srcset="../raw/images/logo-header-energy.svg 1x, ../raw/images/logo-header-energy.svg 2x">
+          <source media="(min-width: 768px)" width="60" hight="50" type="image/svg+xml" srcset="../raw/images/logo-header-energy.svg 1x, ../raw/images/logo-header-energy.svg 2x">
+        <img class="header__logo-image" src="../raw/images/logo-header-energy.svg" alt="Логотип CAT ENERGY" width="33" height="38" srcset="../raw/images/logo-header-energy.svg 1x, ../raw/images/logo-header-energy.svg 2x"/>
+      </picture>
       </a>
+      <h1 class="visually-hidden">CAT ENERGY</h1>
       <nav class="nav">
         <button
           class="nav__toggle"
@@ -47,7 +92,14 @@
               <h1 class="catalog__title">Каталог продукции</h1>
               <div class="catalog__products">
                 <div class="product-card">
-                  <img class="product-card__image" />
+                  <a class="product-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" width="161" hight="172" type="image/png" srcset="../raw/images/chicken-catalog.png 1x, ../raw/images/chicken-catalog.png 2x">
+                      <source media="(min-width: 768px)" width="161" hight="172" type="image/png" srcset="../raw/images/chicken-catalog.png 1x, ../raw/images/chicken-catalog.png 2x">
+
+                  <img class="product-card__image" src="../raw/images/chicken-catalog.png" alt="Питание со вкусом курицы 500гр" width="68" hight="86" srcset="../raw/images/chicken-catalog.png 1x, ../raw/images/chicken-catalog.png 2x"/>
+                </picture>
+                </a>
                   <div class="product-card__content">
                     <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
                     <table class="product-card__info">
@@ -65,10 +117,16 @@
                       </tr>
                     </table>
                   </div>
-                  <button class="product-card__button button">заказать</button>
+                  <a class="product-card__button" href="#">заказать</a>
                 </div>
                 <div class="product-card">
-                  <img class="product-card__image" />
+                  <a class="product-card__link"  href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" width="172" hight="196" type="image/png" srcset="../raw/images/chicken-catalog.png 1x, ../raw/images/chicken-catalog.png 2x">
+                      <source media="(min-width: 768px)" width="168" hight="206" type="image/png" srcset="../raw/images/chicken-catalog.png 1x, ../raw/images/chicken-catalog.png 2x">
+                  <img class="product-card__image" src="../raw/images/chicken-catalog.png" alt="Питание со вкусом курицы 1000гр" width="84" hight="100" srcset="../raw/images/chicken-catalog.png 1x, ../raw/images/chicken-catalog.png 2x"/>
+                </picture>
+                  </a>
                   <div class="product-card__content">
                     <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
                     <table class="product-card__info">
@@ -86,10 +144,16 @@
                       </tr>
                     </table>
                   </div>
-                  <button class="product-card__button button">заказать</button>
+                  <a class="product-card__button" href="#">заказать</a>
                 </div>
                 <div class="product-card">
-                  <img class="product-card__image" />
+                  <a class="product-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" width="161" hight="172" type="image/png" srcset="../raw/images/fish-catalog.png 1x, .../raw/images/fish-catalog.png 2x">
+                      <source media="(min-width: 768px)" width="161" hight="172" type="image/png" srcset="../raw/images/fish-catalog.png 1x, .../raw/images/fish-catalog.png 2x">
+                  <img class="product-card__image" src="../raw/images/fish-catalog.png" alt="Питание со вкусом рыбы 500гр" width="68" hight="86" srcset="../raw/images/fish-catalog.png 1x, .../raw/images/fish-catalog.png 2x"/>
+                </picture>
+                  </a>
                   <div class="product-card__content">
                     <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
                     <table class="product-card__info">
@@ -107,10 +171,16 @@
                       </tr>
                     </table>
                   </div>
-                  <button class="product-card__button button">заказать</button>
+                  <a class="product-card__button" href="#">заказать</a>
                 </div>
                 <div class="product-card">
-                  <img class="product-card__image" />
+                  <a class="product-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" width="172" hight="196" type="image/png" srcset="../raw/images/fish-catalog.png 1x, .../raw/images/fish-catalog.png 2x">
+                      <source media="(min-width: 768px)" width="168" hight="206" type="image/png" srcset="../raw/images/fish-catalog.png 1x, .../raw/images/fish-catalog.png 2x">
+                  <img class="product-card__image" src="../raw/images/fish-catalog.png" alt="Питание со вкусом рыбы 1000гр"  width="84" hight="100" srcset="../raw/images/fish-catalog.png 1x, .../raw/images/fish-catalog.png 2x"/>
+                </picture>
+                  </a>
                   <div class="product-card__content">
                     <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
                     <table class="product-card__info">
@@ -128,10 +198,16 @@
                       </tr>
                     </table>
                   </div>
-                  <button class="product-card__button button">заказать</button>
+                  <a class="product-card__button" href="#">заказать</a>
                 </div>
                 <div class="product-card">
-                  <img class="product-card__image" />
+                  <a class="product-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" width="161" hight="172" type="image/png" srcset="../raw/images/buckwheat.png 1x, .../raw/images/buckwheat.png 2x">
+                      <source media="(min-width: 768px)" width="161" hight="172" type="image/png" srcset="../raw/images/buckwheat.png 1x, .../raw/images/buckwheat.png 2x">
+                  <img class="product-card__image" src="../raw/images/buckwheat.png" alt="Питание со вкусом гречки 500гр"  width="68" hight="86"  srcset="../raw/images/buckwheat.png1x, .../raw/images/buckwheat.png 2x"/>
+                </picture>
+                  </a>
                   <div class="product-card__content">
                     <h3 class="product-card__title">Cat Energy slim 500 г</h3>
                     <table class="product-card__info">
@@ -149,10 +225,16 @@
                       </tr>
                     </table>
                   </div>
-                  <button class="product-card__button button">заказать</button>
+                  <a class="product-card__button" href="#">заказать</a>
                 </div>
                 <div class="product-card">
-                  <img class="product-card__image" />
+                  <a class="product-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" width="172" hight="196"  type="image/png" srcset="../raw/images/buckwheat.png 1x, .../raw/images/buckwheat.png 2x">
+                      <source media="(min-width: 768px)" width="172" hight="196"  type="image/png" srcset="../raw/images/buckwheat.png 1x, .../raw/images/buckwheat.png 2x">
+                  <img class="product-card__image" src="../raw/images/buckwheat.png" alt="Питание со вкусом гречки 1000гр"  width="84" hight="100"  srcset="../raw/images/buckwheat.png1x, .../raw/images/buckwheat.png 2x"/>
+                </picture>
+                  </a>
                   <div class="product-card__content">
                     <h3 class="product-card__title">Cat Energy slim 1000 г</h3>
                     <table class="product-card__info">
@@ -170,10 +252,16 @@
                       </tr>
                     </table>
                   </div>
-                  <button class="product-card__button button">заказать</button>
+                  <a class="product-card__button" href="#">заказать</a>
                 </div>
                 <div class="product-card">
-                  <img class="product-card__image" />
+                  <a class="product-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" width="161" hight="172"   type="image/png" srcset="../raw/images/rice.png 1x, .../raw/images/rice.png 2x">
+                      <source media="(min-width: 768px)" width="161" hight="172"   type="image/png" srcset="../raw/images/rice.png 1x, .../raw/images/rice.png 2x">
+                  <img class="product-card__image" src="../raw/images/rice.png" alt="Питание рисовое 500гр" width="68" hight="86" srcset="../raw/images/rice.png 1x, .../raw/images/rice.png 2x"/>
+                </picture>
+                  </a>
                   <div class="product-card__content">
                     <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
                     <table class="product-card__info">
@@ -191,7 +279,7 @@
                       </tr>
                     </table>
                   </div>
-                  <button class="product-card__button button">заказать</button>
+                  <a class="product-card__button" href="#">заказать</a>
                 </div>
               </div>
             </div>
@@ -210,7 +298,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-card__button button disabled">показать все</a>
+                <a href="#" class="product-card__button product-card__disabled">показать все</a>
               </div>
             </div>
           </div>
@@ -225,25 +313,25 @@
                   <span class="additional-products__name">Сахарозаменитель</span>
                   <span class="additional-products__details">1 упаковка (100 г)</span>
                   <span class="additional-products__price">200 ₽</span>
-                  <button class="additional-products__button button button--small">заказать</button>
+                  <a class="additional-products__button" href="#">заказать</a>
                 </div>
                 <div class="additional-products__item">
                   <span class="additional-products__name">Питьевая вода</span>
                   <span class="additional-products__details">5 литров</span>
                   <span class="additional-products__price">50 ₽</span>
-                  <button class="additional-products__button button button--small">заказать</button>
+                  <a class="additional-products__button" href="#">заказать</a>
                 </div>
                 <div class="additional-products__item">
                   <span class="additional-products__name">Молоко</span>
                   <span class="additional-products__details">1 литр</span>
                   <span class="additional-products__price">100 ₽</span>
-                  <button class="additional-products__button button button--small">заказать</button>
+                  <a class="additional-products__button" href="#">заказать</a>
                 </div>
                 <div class="additional-products__item">
                   <span class="additional-products__name">Витамины</span>
                   <span class="additional-products__details">1 упаковка (30 г)</span>
                   <span class="additional-products__price">300 ₽</span>
-                  <button class="additional-products__button button button--small">заказать</button>
+                  <a class="additional-products__button" href="#">заказать</a>
                 </div>
               </div>
             </section>
@@ -298,7 +386,11 @@
       <div class="footer__container">
         <div class="footer__logo">
           <a class="footer__logo-link" href="./index.html">
-            <img class="footer__logo-image" src="" alt="Cat Energy">
+            <picture>
+              <source media="(min-width: 1200px)" width="128" hight="24" type="image/svg+xml" srcset="../raw/images/logo-cat-energy.svg 1x, ../raw/images/logo-cat-energy.svg 2x">
+              <source media="(min-width: 768px)" width="128" hight="24" type="image/svg+xml" srcset="../raw/images/logo-cat-energy.svg 1x, ../raw/images/logo-cat-energy.svg 2x">
+            <img class="footer__logo-image" src="../raw/images/logo-cat-energy.svg" alt="Cat Energy" width="128" hight="24" srcset="../raw/images/logo-cat-energy.svg 1x, ../raw/images/logo-cat-energy.svg 2x" />
+          </picture>
           </a>
         </div>
         <div class="footer__social">
@@ -328,7 +420,17 @@
         </div>
         <div class="footer__copyright">
           <a class="footer__copyright-link" href="https://htmlacademy.ru" target="_blank" rel="noopener noreferrer">
-            <img class="footer__copyright-logo" src="" alt="Логотип HTML Academy">
+            <picture>
+              <source media="(min-width: 1200px)" width="27" hight="34" type="image/svg+xml" srcset="../raw/images/logo-html.svg 1x, ../raw/images/logo-html.svg 2x">
+                <source media="(min-width: 768px)" width="27" hight="34" type="image/svg+xml" srcset="../raw/images/logo-html.svg 1x, ../raw/images/logo-html.svg 2x">
+              <img
+                class="footer__copyright-logo"
+                src="../raw/images/logo-html.svg"
+                alt="Логотип HTML Academy"
+                width="27" hight="34"
+                srcset="../raw/images/logo-html.svg 1x, ../raw/images/logo-html.svg 2x"
+              />
+            </picture>
           </a>
         </div>
       </div>
