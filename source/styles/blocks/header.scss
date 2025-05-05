@@ -1,5 +1,42 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  @media (min-width: 1200px) {
+   padding: 110px 0;
+  }
+
+  @media (min-width: 768px) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: 320px) {
+    padding: 20px 0;
+  }
+}
+
+
+.header__logo {
+  @media (min-width: 1200px) {
+
+   }
+
+   @media (min-width: 768px) {
+
+   }
+
+   @media (min-width: 320px) {
+
+   }
+}
+
+.header__logo-image {
+  @media (min-width: 1200px) {
+
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 320px) {
+
+  }
 }
