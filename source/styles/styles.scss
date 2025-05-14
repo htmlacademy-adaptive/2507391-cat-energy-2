@@ -2,7 +2,9 @@
 @import "./common/visually-hidden.scss";
 @import "./common/variables.scss";
 @import "./common/fonts.scss";
+@import "./common/mixins.scss";
 @import "./common/global.scss";
+
 
 /* BLOCKS */
 @import "./blocks/wrapper.scss";
@@ -10,13 +12,13 @@
 @import "./blocks/main.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/hero.scss";
-@import "./block/assortment.scss";
+@import "./blocks/assortment.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/example.scss";
 @import "./blocks/cat-slider.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/footer.scss";
-@import "./block/catalog.scss";
+@import "./blocks/catalog.scss";
 @import "./blocks/buttons.scss";
 @import "./blocks/menu.scss";
 @import "./blocks/product-card.scss";
