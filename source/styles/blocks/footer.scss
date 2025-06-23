@@ -1,47 +1,143 @@
 .footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 40px 20px;
 
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .footer__logo {
+  margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__logo-link {
-
+  display: block;
+  text-decoration: none;
 }
 
 .footer__logo-image {
-
+  display: block;
+  width: 128px;
+  height: 24px;
 }
 
 .footer__social {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
+    border: none;
+  }
 }
 
 .footer__social-list {
-
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .footer__social-item {
-
+  display: flex;
+  align-items: center;
 }
 
-.ooter__social-link {
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 22px;
+  color: #666666;
+  transition: color 0.3s ease;
 
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__social-icon {
-
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
 
 .footer__copyright {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-decoration: none;
+  transition: color 0.3s ease;
 
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+}
+
+.footer__copyright-link {
+  display: block;
+  color: #444444;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__copyright-logo {
-
+  display: block;
+  width: 27px;
+  height: 34px;
+  fill: currentColor;
 }

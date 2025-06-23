@@ -1,27 +1,186 @@
 .hero {
+  position: relative;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 20px;
+  overflow: hidden;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 0;
+    min-height: 875px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
+    padding-bottom: 80px;
+    min-height: 580px;
+  }
 }
 
 .hero__content {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../../images/background-cat@2x.jpg");
+  background-repeat: no-repeat;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    background-image: url("../../images/background-cat@2x.jpg");
+    background-repeat: no-repeat;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
 }
 
 .hero__program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
 
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 87px;
+    min-height: 700px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    min-height: 400px;
+  }
 }
 
 .hero__title {
+  z-index: 3;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+  color: #ffffff;
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    width: 414px;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    color: #000000;
+  }
 }
 
 .hero__subtitle {
+  color: #ffffff;
+  z-index: 3;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 27px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    color: #000000;
+  }
 }
 
 .hero__product-image {
+  display: block;
+  margin: 0 auto 3px;
+  width: 280px;
+  height: auto;
 
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-45%);
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    right: 220px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .hero__button {
+  width: 100%;
+  max-width: 280px;
+  padding: 11px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  z-index: 2;
 
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+    padding: 17px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.hero__product-info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 87px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 80px;
+  }
+}
+
+.hero__product-name {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.hero__product-weight {
+  font-weight: 400;
 }

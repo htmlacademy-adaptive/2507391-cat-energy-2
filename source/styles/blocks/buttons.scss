@@ -1,3 +1,20 @@
 .button {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 
+  .button:hover {
+    background-color: #5eaa2f;
+  }
+
+  .button:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

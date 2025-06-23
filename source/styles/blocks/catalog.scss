@@ -1,15 +1,52 @@
 .catalog {
+  width: 100%;
+  padding: 27px 20px 25px;
 
+  @media (min-width: $tablet-width) {
+    padding: 65px 30px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 76px;
+  }
 }
 
 .catalog__container {
-
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
 .catalog__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 40px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+  }
 }
 
 .catalog__products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
 
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 62px 80px;
+    margin-bottom: 76px;
+  }
 }
