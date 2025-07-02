@@ -31,13 +31,12 @@
 }
 
 .advantages__list {
-}
-
-.advantages__items {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: advantages-counter;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -53,91 +52,69 @@
   }
 }
 
-.dvantages__item {
+.advantages__item {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
+    gap: 94px;
   }
 }
 
-.advantages__icon {
+.advantages__item::after {
+  @media (min-width: $tablet-width) {
+    content: counter(advantages-counter);
+    counter-increment: advantages-counter;
+    display: block;
+    font-size: 280px;
+    color: #f2f2f2;
+  }
+}
+
+.advantages__item::before {
+  content: "";
+  gap: 20px;
   display: block;
   text-align: center;
-  min-width: 60px;
-  min-height: 60px;
+  width: 60px;
+  height: 60px;
   background-color: #68b738;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-    min-width: 80px;
-    min-height: 80px;
-    background-color: #68b738;
+    width: 80px;
+    height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: center;
-    min-width: 80px;
-    min-height: 80px;
-    background-color: #68b738;
   }
 }
 
-.advantages__item-first {
-  @media (min-width: $tablet-width) {
-    background-image: url(../../images/background-1@1x.png);
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url(../../images/background-1@1x.png);
-    background-repeat: no-repeat;
-  }
+.advantages__item--first::before {
+  background-image: url(../../icons/stack.svg#first.svg);
 }
 
-.advantages__item-second {
-  @media (min-width: $tablet-width) {
-    background-image: url(../../images/background-2@1x.png);
-    background-repeat: no-repeat;
-    margin-right: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url(../../images/background-2@1x.png);
-    background-repeat: no-repeat;
-    margin-right: 0;
-  }
+.advantages__item--second::before {
+  background-image: url(../../icons/stack.svg#second.svg);
 }
 
-.advantages__item-third {
-  @media (min-width: $tablet-width) {
-    background-image: url(../../images/background-3@1x.png);
-    background-repeat: no-repeat;
-    margin-right: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url(../../images/background-3@1x.png);
-    background-repeat: no-repeat;
-    margin-right: 0;
-  }
+.advantages__item--third::before {
+  background-image: url(../../icons/stack.svg#third.svg);
 }
 
-.advantages__item-fourth {
-  @media (min-width: $tablet-width) {
-    background-image: url(../../images/background-4@1x.png);
-    background-repeat: no-repeat;
-    margin-right: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url(../../images/background-4@1x.png);
-    background-repeat: no-repeat;
-    margin-right: 0;
-  }
+.advantages__item--fourth::before {
+  background-image: url(../../icons/stack.svg#fourth.svg);
 }
 
 .advantages__description {
@@ -147,6 +124,7 @@
   font-weight: 400;
   text-align: left;
   color: #444444;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-family: "Lato";
