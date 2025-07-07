@@ -81,15 +81,14 @@
 
 .advantages__item::before {
   content: "";
-  gap: 20px;
   display: block;
-  text-align: center;
   width: 60px;
   height: 60px;
   background-color: #68b738;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 30px 30px;
+  flex-shrink: 0;
 
   @media (min-width: $tablet-width) {
     justify-content: center;
@@ -102,19 +101,19 @@
 }
 
 .advantages__item--first::before {
-  background-image: url(../../icons/stack.svg#first.svg);
+  background-image: url(../../icons/first.svg);
 }
 
 .advantages__item--second::before {
-  background-image: url(../../icons/stack.svg#second.svg);
+  background-image: url(../../icons/second.svg);
 }
 
 .advantages__item--third::before {
-  background-image: url(../../icons/stack.svg#third.svg);
+  background-image: url(../../icons/third.svg);
 }
 
 .advantages__item--fourth::before {
-  background-image: url(../../icons/stack.svg#fourth.svg);
+  background-image: url(../../icons/fourth.svg);
 }
 
 .advantages__description {
@@ -127,21 +126,28 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    font-family: "Lato";
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    text-align: left;
-    color: #444444;
+
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Lato";
+
+  }
+}
+
+.advantages__numder {
+  display: none;
+
+  @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     text-align: left;
     margin-bottom: 32px;
     color: #444444;
+
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
