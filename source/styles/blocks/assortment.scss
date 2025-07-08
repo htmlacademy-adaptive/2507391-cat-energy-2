@@ -1,22 +1,26 @@
 
 .assortment {
   box-sizing: border-box;
-  width: 100%;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   background-color: #ffffff;
   padding: 0 20px;
+  margin: 0 auto;
+
 
   @media (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 708px;
+    margin: 0 auto;
     gap: 30px;
     padding: 0 30px;
   }
 
   @media (min-width: 1200px) {
-    max-width: 1440px;
+    min-width: 1220px;
     margin: 0 auto;
     flex-wrap: nowrap;
     gap: 80px;
