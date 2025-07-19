@@ -4,7 +4,7 @@
 }
 
 .advantages__title {
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -12,7 +12,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald";
+    font-family: $font-family-oswald;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Oswald";
+    font-family: $font-family-oswald;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
@@ -40,8 +40,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 37px 153px;
   }
 
@@ -72,10 +71,15 @@
 .advantages__item::after {
   @media (min-width: $tablet-width) {
     content: counter(advantages-counter);
-    counter-increment: advantages-counter;
     display: block;
+    right: 0;
+    top: 0;
+    counter-increment: advantages-counter;
+    position: absolute;
+    z-index: -1;
     font-size: 280px;
     color: #f2f2f2;
+    font-family: $font-family-oswald;
   }
 }
 
@@ -117,7 +121,7 @@
 }
 
 .advantages__description {
-  font-family: "Lato";
+  font-family: $font-family-lato;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;

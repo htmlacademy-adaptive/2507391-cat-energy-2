@@ -1,18 +1,35 @@
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 13px 20px;
-  background-color: #ffffff;
-
+  padding: 13px 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 30px;
+    padding: 24px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 110px;
+    position: static;
+    padding: 53px 0;
+  }
+}
+
+.header_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--index::after {
+  @media (min-width: $desktop-width) {
+    content: '';
+    width: 50%;
+    width: 694px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("../../images/background-cat@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #5eaa2f;
   }
 }
 

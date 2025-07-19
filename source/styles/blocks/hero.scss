@@ -3,30 +3,37 @@
   position: relative;
   width: 100%;
   padding: 27px 0 20px;
-  background-color: #68b738;
-  background-image: url("../../images/background-cat@2x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position: center top;
+  background-image: url("../../images/background-mobile@2x.jpg");
   color: #ffffff;
   text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #5eaa2f;
+    height: 302px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 30px 0 0;
     min-height: 875px;
-    background-color: #ffffff;
     background-image: none;
     color: #000000;
     text-align: left;
+
+    &::after {
+      display: none;
+    }
+
   }
 
   @media (min-width: $desktop-width) {
     padding: 110px 0 80px;
     min-height: 580px;
-    background-image: url("../../images/background-cat@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
   }
 }
 
@@ -53,7 +60,7 @@
 }
 
 .hero__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family-oswald;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -70,7 +77,7 @@
 }
 
 .hero__subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family-oswald;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -123,6 +130,7 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
   margin-bottom: 20px;
 
   &:hover {
@@ -157,7 +165,7 @@
     position: absolute;
     bottom: 0;
     left: 87px;
-    font-family: "Oswald", sans-serif;
+    font-family: $font-family-oswald;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
