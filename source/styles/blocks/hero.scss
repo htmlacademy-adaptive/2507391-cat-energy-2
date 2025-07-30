@@ -100,6 +100,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
+    margin-top: 21px;
     width: 709px;
     height: 609px;
     right: 30px;
@@ -120,9 +121,9 @@
   width: 100%;
   max-width: 280px;
   padding: 11px 20px;
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   color: #ffffff;
   background-color: #68b738;
@@ -145,7 +146,7 @@
     max-width: 244px;
     padding: 17px 26px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
     margin-left: 3px;
     margin-bottom: 0;
     position: relative;
@@ -155,33 +156,4 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
   }
-}
-
-.hero__product-info {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 87px;
-    font-family: $font-family-oswald;
-    font-size: 20px;
-    line-height: 20px;
-    color: #000000;
-    text-transform: uppercase;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 80px;
-  }
-}
-
-.hero__product-name {
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.hero__product-weight {
-  font-weight: 400;
 }

@@ -29,15 +29,13 @@
 }
 
 .example__title {
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-size: 36px;
   line-height: 40px;
-  font-weight: 400;
   text-align: left;
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald";
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
@@ -48,19 +46,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Oswald";
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 400;
-    text-align: left;
-    color: #000000;
 
   }
 
 }
 
 .example__text {
-  font-family: "Lato";
+  font-family: $font-family-lato;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -68,22 +60,12 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    font-family: "Lato";
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  text-align: left;
-  color: #444444;
 
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Lato";
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: left;
-  color: #444444;
 
   }
 
@@ -119,49 +101,34 @@
 }
 
 .example__number {
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-size: 24px;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald";
     font-size: 30px;
-    color: #000000;
-    text-transform: uppercase;
-    text-align: center;
 
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Oswald";
     font-size: 24px;
-    color: #000000;
-    text-transform: uppercase;
-    text-align: center;
   }
 }
 
 .example__label {
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-size: 12px;
   color: #444444;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald";
     font-size: 14px;
-    color: #444444;
-    text-align: center;
 
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Oswald";
-    font-size: 14px;
-    color: #444444;
-    text-align: center;
 
   }
 
@@ -171,7 +138,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-size: 20px;
   text-transform: uppercase;
 
@@ -185,53 +152,35 @@
 }
 
 .example__cost-text {
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-size: 14px;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald";
     font-size: 20px;
-    color: #000000;
     text-align: right;
-    text-transform: uppercase;
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Oswald";
-    font-size: 20px;
-    color: #000000;
-    text-align: right;
-    text-transform: uppercase;
 
   }
 }
 
 .example__cost-value {
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-size: 14px;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald";
     font-size: 20px;
-    color: #000000;
     text-align: right;
-    text-transform: uppercase;
-
-
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Oswald";
-    font-size: 20px;
-    color: #000000;
-    text-align: right;
-    text-transform: uppercase;
 
 
   }
@@ -336,10 +285,6 @@
   -webkit-mask-size: contain;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: #666666;
     mask: url("../../icons/thumb.svg") no-repeat center;
     -webkit-mask: url("../../icons/thumb.svg") no-repeat center;
     mask-size: contain;
@@ -348,10 +293,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: #666666;
     mask: url("../../icons/thumb.svg") no-repeat center;
     -webkit-mask: url("../../icons/thumb.svg") no-repeat center;
     mask-size: contain;

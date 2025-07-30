@@ -46,11 +46,9 @@
 }
 
 .contacts__title {
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
-  color: #111111;
   text-transform: uppercase;
   max-width: 140px;
 
@@ -66,12 +64,11 @@
 }
 
 .contacts__address {
-  font-family: "Lato";
+  font-family: $font-family-lato;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: #444444;
-  font-style: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
