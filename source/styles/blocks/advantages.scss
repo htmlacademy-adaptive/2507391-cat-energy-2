@@ -72,8 +72,6 @@
   @media (min-width: $tablet-width) {
     content: counter(advantages-counter);
     display: block;
-    right: 0;
-    top: 0;
     counter-increment: advantages-counter;
     position: absolute;
     z-index: -1;

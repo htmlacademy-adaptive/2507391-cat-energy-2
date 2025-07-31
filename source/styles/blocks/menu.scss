@@ -16,6 +16,21 @@
   }
 }
 
+.menu__item {
+  display: block;
+  border-top: 1px solid #e6e6e6;
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #FFFFFF;
+  }
+}
+
 .menu__link {
   display: inline-block;
   padding: 10px 0;
@@ -29,6 +44,7 @@
 
   @media (min-width: $tablet-width) {
     white-space: nowrap;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,10 +54,25 @@
   }
 }
 
-.menu__item {
-  display: block;
-}
-
 .menu__item--active .menu__link {
   color: #111111;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #68b738;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      color: #FFFFFF;
+    }
+  }
 }

@@ -89,6 +89,12 @@
 }
 
 .example__stat {
+  border-radius: 3px;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+  padding: 15px 21px;
 
   @media (min-width: $tablet-width) {
 

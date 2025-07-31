@@ -1,3 +1,4 @@
+
 .nav {
   display: flex;
   align-items: center;
@@ -74,10 +75,11 @@
   right: 0;
   text-align: center;
   background-color: #ffffff;
+  transform: scaleY(0);
+  transform-origin: top;
   transition: transform 0.3s ease;
   z-index: 100;
   padding: 20px 25px 25px;
-  display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -91,28 +93,6 @@
   }
 }
 
-
-.nav__toggle:checked ~ .nav__overlay {
-  @media (max-width: $mobile-width-only) {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 99;
-  }
-}
-
-.nav__closed::before {
-  @media (max-width: $mobile-width-only) {
-
-  }
-}
-
-.nav__nojs {
-  @media (max-width: $mobile-width-only) {
-
-  }
+.nav__toggle:checked ~ .nav__menu {
+  transform: scaleY(1);
 }

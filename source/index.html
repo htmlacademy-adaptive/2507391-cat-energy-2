@@ -83,90 +83,83 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <header class="header header--index">
+    <header class="header">
       <div class="container">
-        <div class="header_row">
-      <a class="header__logo" href="./index.html">
-        <picture>
-          <source
-            media="(min-width: 1200px)"
-            srcset="images/logo-header-energy.svg"
-            type="image/svg+xml"
-            width="70"
-            height="59"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="images/logo-header-energy.svg"
-            type="image/svg+xml"
-            width="60"
-            height="50"
-          />
-          <img
-            class="header__logo-image"
-            src="images/logo-header-energy.svg"
-            alt="Логотип CAT ENERGY"
-            width="33"
-            height="38"
-          />
-        </picture>
-        <picture>
-          <source
-            media="(min-width: 1200px)"
-            srcset="images/logo-cat-energy.svg"
-            type="image/svg+xml"
-            width="118"
-            height="21"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="images/logo-cat-energy.svg"
-            type="image/svg+xml"
-            width="101"
-            height="18"
-          />
-          <img
-            class="header__logo-image"
-            src="images/logo-cat-energy.svg"
-            alt="Cat Energy"
-            width="101"
-            height="18"
-          />
-        </picture>
-      </a>
+      <div class="header_row">
+        <a href="./index.html" class="header__logo">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="images/logo-header-energy.svg"
+              type="image/svg+xml"
+              width="70"
+              height="59"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="images/logo-header-energy.svg"
+              type="image/svg+xml"
+              width="60"
+              height="50"
+            />
+            <img
+              class="header__logo-image"
+              src="images/logo-header-energy.svg"
+              alt="Логотип CAT ENERGY"
+              width="33"
+              height="38"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="images/logo-cat-energy.svg"
+              type="image/svg+xml"
+              width="118"
+              height="21"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="images/logo-cat-energy.svg"
+              type="image/svg+xml"
+              width="101"
+              height="18"
+            />
+            <img
+              class="header__logo-image"
+              src="images/logo-cat-energy.svg"
+              alt="Cat Energy"
+              width="101"
+              height="18"
+            />
+          </picture>
+        </a>
 
-      <nav class="nav nav__closed nav__nojs">
-        <input
-          type="checkbox"
-          id="nav-toggle"
-          class="nav__toggle"
-          aria-label="Меню"
-        />
-        <label for="nav-toggle" class="nav__toggle-label">
-          <span class="nav__toggle-icon"></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </label>
+        <nav class="nav">
+          <input type="checkbox" id="nav-toggle" class="nav__toggle">
+          <label for="nav-toggle" class="nav__toggle-label">
+            <span class="nav__toggle-icon"></span>
+          </label>
 
-        <div class="nav__menu menu" id="nav-menu">
-          <ul class="menu__list">
+          <ul class="nav__menu menu__list">
             <li class="menu__item menu__item--active">
-              <a class="menu__link" href="./index.html">Главная</a>
+              <a href="./index.html" class="menu__link">Главная</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="./catalog.html">Каталог продукции</a>
+              <a href="/catalog.html" class="menu__link">Каталог продукции</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Подбор программы</a>
+              <a href="#" class="menu__link">Подбор программы</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
     </div>
     </header>
     <main class="main" data-test="main">
       <section class="hero" data-test="hero">
         <div class="container">
+          <div class="hero__image-container"></div>
         <div class="hero__content">
           <div class="hero__program">
             <h1 class="hero__title">
@@ -214,6 +207,7 @@
         <div class="container">
           <div class="assortment__grid">
         <article class="assortment__item">
+          <div class="assortment__container">
           <div class="assortment__image">
             <svg
               width="140"
@@ -235,8 +229,9 @@
               </defs>
             </svg>
           </div>
+          <h3 class="assortment__title">Похудение</h3>
+        </div>
           <div class="assortment__content">
-            <h3 class="assortment__title">Похудение</h3>
             <p class="assortment__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
@@ -263,6 +258,7 @@
           </div>
         </article>
         <article class="assortment__item">
+          <div class="assortment__container">
           <div class="assortment__image">
             <svg width="67" height="28" viewBox="0 0 67 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_135_3258)">
@@ -276,8 +272,9 @@
               </svg>
 
           </div>
+          <h3 class="assortment__title">Набор массы</h3>
+        </div>
           <div class="assortment__content">
-            <h3 class="assortment__title">Набор массы</h3>
             <p class="assortment__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
