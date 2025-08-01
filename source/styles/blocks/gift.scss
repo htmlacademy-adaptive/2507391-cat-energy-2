@@ -1,6 +1,6 @@
 .gift {
   background-color: #68b738;
-  background-image: url("../../images/cat-catalog@1x.jpg");
+  background-image: url("../../images/cat-catalog2@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 58px 60px 43px;
@@ -9,7 +9,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../images/cat-catalog@2x.jpg");
+    background-image: url("../../images/cat-catalogt@2x.jpg");
     padding: 57px 124px 60px 77px;
     text-align: left;
     display: flex;
@@ -17,12 +17,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../images/cat-catalog@2x.jpg");
+    background-image: url("../../images/cat-catalog2@2x.jpg");
     padding: 56px 40px 42px;
     text-align: center;
     display: block;
-    margin-bottom: 0;
-    height: 100%;
+    margin-top: 220px;
   }
 }
 

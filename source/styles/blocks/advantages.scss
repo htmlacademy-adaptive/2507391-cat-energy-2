@@ -58,9 +58,9 @@
   background-position: center;
 
   @media (min-width: $tablet-width) {
-  flex-direction: column;
-  gap: 30px;
-  margin-bottom: 37px;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,11 +128,9 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -149,6 +147,5 @@
   }
 
   @media (min-width: $desktop-width) {
-
   }
 }

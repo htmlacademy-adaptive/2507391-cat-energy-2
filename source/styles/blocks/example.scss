@@ -1,17 +1,12 @@
 .example {
   padding: 40px 0;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-
-
   }
 
   @media (min-width: $desktop-width) {
-
-
   }
-
 }
 
 .example__content {
@@ -19,13 +14,10 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
-
 }
 
 .example__title {
@@ -41,14 +33,10 @@
     font-weight: 400;
     text-align: left;
     color: #000000;
-
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
-
 }
 
 .example__text {
@@ -60,15 +48,12 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-  font-size: 16px;
-  line-height: 24px;
-
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-
   }
-
 }
 
 .example__stats {
@@ -79,13 +64,10 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
-
 }
 
 .example__stat {
@@ -97,13 +79,10 @@
   padding: 15px 21px;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
-
 }
 
 .example__number {
@@ -115,7 +94,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -131,13 +109,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
-
 }
 
 .example__cost {
@@ -149,11 +124,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -170,7 +143,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -187,8 +159,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
-
   }
 }
 
@@ -202,11 +172,9 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -216,13 +184,10 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
-
 }
 
 .example__slider-img picture {
@@ -230,14 +195,11 @@
   max-width: 50%;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
 }
-
 
 .cat-slider {
   display: block;
@@ -245,11 +207,9 @@
   height: auto;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -260,23 +220,17 @@
   transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
 }
 
 .example__slider-toggle {
-
-
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -295,7 +249,6 @@
     -webkit-mask: url("../../icons/thumb.svg") no-repeat center;
     mask-size: contain;
     -webkit-mask-size: contain;
-
   }
 
   @media (min-width: $desktop-width) {

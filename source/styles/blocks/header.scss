@@ -20,7 +20,7 @@
 
 .header--index::after {
   @media (min-width: $desktop-width) {
-    content: '';
+    content: "";
     width: 50%;
     width: 694px;
     position: absolute;
