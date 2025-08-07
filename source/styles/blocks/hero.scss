@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   padding: 27px 0 20px;
-  color: #ffffff;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -39,16 +38,6 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    left: auto;
-    width: 50%;
-    height: 694px;
-    background-image: url("../../images/background-cat@2x.jpg");
-    background-position: left center;
-    background-repeat: no-repeat;
   }
 }
 

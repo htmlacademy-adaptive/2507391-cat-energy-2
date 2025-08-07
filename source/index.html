@@ -83,7 +83,7 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--index">
       <div class="container">
         <div class="header_row">
           <a href="./index.html" class="header__logo">
@@ -136,11 +136,11 @@
           </a>
 
           <nav class="nav">
-            <input type="checkbox" id="nav-toggle" class="nav__toggle" />
-            <label for="nav-toggle" class="nav__toggle-label">
-              <span class="nav__toggle-icon"></span>
-            </label>
-
+            <button class="nav__toggle nav__toggle--open" id="nav-toggle">
+              <span class="nav__toggle-label">
+                <span class="nav__toggle-icon"></span>
+              </span>
+            </button>
             <ul class="nav__menu menu__list">
               <li class="menu__item menu__item--active">
                 <a href="./index.html" class="menu__link">Главная</a>
@@ -360,77 +360,81 @@
       </section>
       <section class="example">
         <div class="container">
-          <div class="example__content">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов
-              в день.
-            </p>
-            <div class="example__stats">
-              <div class="example__stat">
-                <h3 class="example__number">5 КГ</h3>
-                <p class="example__label">снижение веса</p>
+          <div class="example__container">
+            <div class="example__content">
+              <h2 class="example__title">Живой пример</h2>
+              <p class="example__text">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+                на Cat Energy Slim. Отличный результат без изнуряющих
+                тренировок! При этом он не менял своих привычек и по-прежнему
+                спит по 16 часов в день.
+              </p>
+              <div class="example__stats">
+                <div class="example__stat">
+                  <h3 class="example__number">5 КГ</h3>
+                  <p class="example__label">снижение веса</p>
+                </div>
+                <div class="example__stat">
+                  <h3 class="example__number">60 ДНЕЙ</h3>
+                  <p class="example__label">затрачено времени</p>
+                </div>
               </div>
-              <div class="example__stat">
-                <h3 class="example__number">60 ДНЕЙ</h3>
-                <p class="example__label">затрачено времени</p>
+              <div class="example__cost">
+                <p class="example__cost-text">Затраты на питание:</p>
+                <p class="example__cost-value">15 000 РУБ.</p>
               </div>
             </div>
-            <div class="example__cost">
-              <p class="example__cost-text">Затраты на питание:</p>
-              <p class="example__cost-value">15 000 РУБ.</p>
-            </div>
-          </div>
-          <div class="example__slider">
-            <div class="example__slider-img">
-              <picture>
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    images/cat-slider-desk@1x.png 1x,
-                    images/cat-slider-desk@2x.png 2x
-                  "
-                  type="image/png"
-                  width="560"
-                  height="512"
-                />
-                <img
-                  class="cat-slider"
-                  src="images/cat-slider@1x.png"
-                  srcset="images/cat-slider@2x.png 2x"
-                  alt="Слайдер кота"
-                  width="280"
-                  height="256"
-                />
-              </picture>
-              <picture>
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    images/cat-slider-strong-desk@1x.png 1x,
-                    images/cat-slider-strong-desk@2x.png 2x
-                  "
-                  type="image/png"
-                  width="560"
-                  height="512"
-                />
-                <img
-                  class="cat-slider"
-                  src="images/cat-slider-strong@1x.png"
-                  srcset="images/cat-slider-strong@2x.png 2x"
-                  alt="Слайдер кота"
-                  width="280"
-                  height="256"
-                />
-              </picture>
-            </div>
-            <div class="example__slider-container">
-              <button class="example__slider-toggle" type="button">
-                <span class="visually-hidden">Переключить сравнение</span>
-                <span class="example__toggle-icon"></span>
-              </button>
+            <div class="example__slider">
+              <div class="example__slider-wrapper">
+                <div class="example__slider-before">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/cat-slider-desk@1x.png 1x,
+                        images/cat-slider-desk@2x.png 2x
+                      "
+                      width="560"
+                      height="512"
+                    />
+                    <img
+                      class="example__slider-image"
+                      src="images/cat-slider@1x.png"
+                      srcset="images/cat-slider@2x.png 2x"
+                      alt="Кот до похудения"
+                      width="280"
+                      height="256"
+                    />
+                  </picture>
+                </div>
+                <div class="example__slider-after">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        images/cat-slider-strong-desk@1x.png 1x,
+                        images/cat-slider-strong-desk@2x.png 2x
+                      "
+                      width="560"
+                      height="512"
+                    />
+                    <img
+                      class="example__slider-image"
+                      src="images/cat-slider-strong@1x.png"
+                      srcset="images/cat-slider-strong@2x.png 2x"
+                      alt="Кот после похудения"
+                      width="280"
+                      height="256"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="example__slider-controls">
+                <button class="example__slider-toggle" type="button">
+                  <span class="visually-hidden">Переключить сравнение</span>
+                  <span class="example__toggle-icon"></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>

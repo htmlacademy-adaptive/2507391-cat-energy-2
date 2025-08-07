@@ -51,76 +51,76 @@
   <body>
     <header class="header">
       <div class="container">
-      <div class="header_row">
-        <a href="./index.html" class="header__logo">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="images/logo-header-energy.svg"
-              type="image/svg+xml"
-              width="70"
-              height="59"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="images/logo-header-energy.svg"
-              type="image/svg+xml"
-              width="60"
-              height="50"
-            />
-            <img
-              class="header__logo-image"
-              src="images/logo-header-energy.svg"
-              alt="Логотип CAT ENERGY"
-              width="33"
-              height="38"
-            />
-          </picture>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="images/logo-cat-energy.svg"
-              type="image/svg+xml"
-              width="118"
-              height="21"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="images/logo-cat-energy.svg"
-              type="image/svg+xml"
-              width="101"
-              height="18"
-            />
-            <img
-              class="header__logo-image"
-              src="images/logo-cat-energy.svg"
-              alt="Cat Energy"
-              width="101"
-              height="18"
-            />
-          </picture>
-        </a>
+        <div class="header_row">
+          <a href="./index.html" class="header__logo">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="images/logo-header-energy.svg"
+                type="image/svg+xml"
+                width="70"
+                height="59"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="images/logo-header-energy.svg"
+                type="image/svg+xml"
+                width="60"
+                height="50"
+              />
+              <img
+                class="header__logo-image"
+                src="images/logo-header-energy.svg"
+                alt="Логотип CAT ENERGY"
+                width="33"
+                height="38"
+              />
+            </picture>
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="images/logo-cat-energy.svg"
+                type="image/svg+xml"
+                width="118"
+                height="21"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="images/logo-cat-energy.svg"
+                type="image/svg+xml"
+                width="101"
+                height="18"
+              />
+              <img
+                class="header__logo-image"
+                src="images/logo-cat-energy.svg"
+                alt="Cat Energy"
+                width="101"
+                height="18"
+              />
+            </picture>
+          </a>
 
-        <nav class="nav">
-          <input type="checkbox" id="nav-toggle" class="nav__toggle">
-          <label for="nav-toggle" class="nav__toggle-label">
-            <span class="nav__toggle-icon"></span>
-          </label>
-
-          <ul class="nav__menu menu__list">
-            <li class="menu__item menu__item--active">
-              <a href="./index.html" class="menu__link">Главная</a>
-            </li>
-            <li class="menu__item">
-              <a href="/catalog.html" class="menu__link">Каталог продукции</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="nav">
+            <button class="nav__toggle nav__toggle--open" id="nav-toggle">
+              <span class="nav__toggle-label">
+                <span class="nav__toggle-icon"></span>
+              </span>
+            </button>
+            <ul class="nav__menu menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="./index.html" class="menu__link">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="/catalog.html" class="menu__link">Каталог продукции</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
     </header>
       <main class="main" data-test="main">
         <section class="catalog" data-test="catalog">
