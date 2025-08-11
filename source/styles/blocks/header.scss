@@ -1,6 +1,7 @@
 .header {
-  padding: 13px 0;
+  padding: 23px 0 14px 0;;
   position: relative;
+
 
   @media (min-width: $tablet-width) {
     padding: 24px 0;
@@ -16,6 +17,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
 }
 
 .header--index::after {
@@ -36,7 +42,7 @@
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 56px;
   text-decoration: none;
 
   @media (min-width: $desktop-width) {

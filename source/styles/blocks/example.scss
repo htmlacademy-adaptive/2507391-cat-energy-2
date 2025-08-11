@@ -1,5 +1,5 @@
 .example {
-  padding: 40px 0;
+   padding: 25px 0 42px;
 
   @media (min-width: $tablet-width) {
   }
@@ -35,6 +35,7 @@
     justify-items: center;
     flex-direction: column;
     max-width: 436px;
+    margin: 0;
   }
 }
 
@@ -44,6 +45,7 @@
   line-height: 40px;
   text-align: left;
   color: #000000;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -54,7 +56,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    margin-top: 0;
+    text-align: left;
   }
 }
 
@@ -73,6 +76,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-top: 97px;
   }
 }
 
@@ -87,6 +91,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: left;
+    margin-top: 54px;
+    gap: 42px;
   }
 }
 
@@ -96,12 +103,13 @@
   border-bottom: 1px solid #cdcdcd;
   border-right: 1px solid #cdcdcd;
   border-left: 1px solid #cdcdcd;
-  padding: 15px 21px;
 
   @media (min-width: $tablet-width) {
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 160px;
   }
 }
 
@@ -117,18 +125,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 24px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 }
 
 .example__label {
-  font-family: $font-family-oswald;
+  font-family: $font-family-lato;
   font-size: 12px;
   color: #444444;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+    line-height: 14px;
   }
 
   @media (min-width: $desktop-width) {

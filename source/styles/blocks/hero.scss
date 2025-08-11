@@ -1,11 +1,11 @@
 .hero {
   position: relative;
   width: 100%;
-  padding: 27px 0 20px;
+  padding: 27px 0 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0 0;
+    padding: 40px 0 0;
     min-height: 875px;
     background-image: none;
     color: #000000;
@@ -17,7 +17,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 110px 0 80px;
     min-height: 580px;
   }
 }
@@ -67,16 +66,20 @@
   font-family: $font-family-oswald;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
   margin: 0 0 25px;
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    font-weight: 400;
     margin-bottom: 40px;
-    width: 414px;
+    // width: 414px;
     color: #000000;
+    font-family: $font-family-oswald;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
   }
 }
 
@@ -94,6 +97,9 @@
     margin-bottom: 50px;
     color: #000000;
   }
+  @media (min-width: $desktop-width) {
+  }
+
 }
 
 .hero__product-image {
@@ -116,8 +122,7 @@
     width: 552px;
     height: 499px;
     right: 220px;
-    top: 50%;
-    transform: translateY(-25%);
+    transform: translateY(-55%);
   }
 }
 
@@ -159,5 +164,6 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    padding: 14px;
   }
 }

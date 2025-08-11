@@ -35,13 +35,13 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0px;
     width: 565px;
-    padding: 60px 80px;
     gap: 87px;
     z-index: 2;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   }
 }
 
@@ -60,6 +60,11 @@
 
   @media (min-width: $desktop-width) {
     max-width: none;
+    padding-left: 80px;
+    padding-right: 0;
+    height: 71px;
+    width: 163px;
+    margin: 0;
   }
 }
 
@@ -78,7 +83,10 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    max-width: none;
+    width: 157px;
+    padding-right: 80px;
+    height: 71px;
+    margin: 0;
   }
 }
 

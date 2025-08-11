@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    }
+
   }
 
   .nav__toggle {
@@ -9,7 +14,6 @@
   border: none;
   background: none;
   cursor: pointer;
-  padding: 0;
   }
 
   .nav__toggle-label {
@@ -97,6 +101,6 @@
   transform: scaleY(1);
   }
 
-  .nav__toggle--open ~ .nav__menu {
-    transform: scaleY(1);
-  }
+  // .nav__toggle--open ~ .nav__menu {
+  //   transform: scaleY(1);
+  // }

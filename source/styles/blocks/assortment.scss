@@ -1,11 +1,12 @@
 .assortment {
-  margin-bottom: 71px;
+  margin-bottom: 15px;
 
 }
 
 .assortment__grid {
   display: grid;
   gap: 20px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -20,9 +21,9 @@
 
 .assortment__item {
   position: relative;
-  padding: 30px 20px;
+  padding: 30px 20px 23px;
   background-color: #f2f2f2;
-  width: 100%;
+
 
   @media (min-width: $tablet-width) {
     padding: 50px 30px;
@@ -31,15 +32,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 457px;
+    width: 465px;
     padding: 52px;
+    height: 272px;
   }
 }
 
 .assortment__container {
   display: flex;
   gap: 20px;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
   }
@@ -52,13 +54,18 @@
   }
 }
 
+.assortment__content {
+  width: 227px;
+  margin-bottom: 0;
+}
+
 .assortment__title {
   font-family: $font-family-oswald;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -66,7 +73,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 77px;
+    margin-top: 26px;
+    margin-left: 60px;
 
   }
 }
@@ -78,6 +86,7 @@
   color: #444444;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  margin-top: 0;
   border-bottom: 1px solid #d9d9d9;
 
 
@@ -89,6 +98,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -107,6 +118,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
   }
 }
 
@@ -149,6 +163,7 @@
   justify-content: center;
   flex-shrink: 0;
   left: 0;
+
   }
 }
 
