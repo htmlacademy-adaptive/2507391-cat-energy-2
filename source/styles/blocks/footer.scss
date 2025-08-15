@@ -4,11 +4,11 @@
   padding: 40px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0;
+    padding: 38px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0;
+    padding: 53px 0;
   }
 }
 
@@ -16,13 +16,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    align-items: center;
+    gap: 384px;
   }
 }
 
@@ -53,15 +58,14 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    padding: 0;
+    padding: 0 0 0 41px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 10px;
-    margin-left: 30px;
+    padding-left: 32px;
   }
-
 }
 
 .footer__social-list {
@@ -105,8 +109,10 @@
 
 .footer__copyright {
   display: flex;
+  width: 100%;
   align-items: center;
-  gap: 22px;
+  gap: 140px;
+  margin: 20px 0;
   font-family: $font-family-lato;
   font-size: 16px;
   line-height: 20px;
@@ -124,6 +130,11 @@
 
   @media (min-width: $tablet-width) {
     gap: 23px;
+    padding-left: 5px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+    padding-left: 0;
   }
 }
 
@@ -132,6 +143,10 @@
   color: #444444;
   transition: color 0.3s ease;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+  }
 
   &:hover {
     color: #68b738;
