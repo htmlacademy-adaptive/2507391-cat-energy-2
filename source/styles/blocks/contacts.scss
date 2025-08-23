@@ -1,6 +1,11 @@
 .contacts {
   width: 100%;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+
+    background-color: #F2F2F2;
+  }
 }
 
 .contacts__container {
@@ -11,7 +16,7 @@
   height: 112px;
 
   @media (min-width: $tablet-width) {
-    gap: 0;
+    height: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,8 +35,12 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 69px 41px;
+    padding: 38px 41px;
     gap: 308px;
+
+    @media (min-width: $tablet-width) {
+      background-color: #F2F2F2;
+    }
   }
 
   @media (min-width: $desktop-width) {

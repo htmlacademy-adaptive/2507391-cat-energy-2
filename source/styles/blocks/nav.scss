@@ -4,9 +4,15 @@
   flex-wrap: nowrap;
 
   @media (min-width: $tablet-width) {
-    width: 436px;
+    height: 100%;
+    width: 100%;
+    margin-left: 84px;
     }
 
+    @media (min-width: $desktop-width) {
+      margin-left: 528px;
+      margin-top: 4px;
+    }
   }
 
   .nav__toggle {

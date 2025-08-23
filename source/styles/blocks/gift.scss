@@ -14,6 +14,8 @@
     text-align: left;
     display: flex;
     align-items: center;
+    margin-top: 70px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +23,7 @@
     padding: 56px 40px 42px;
     text-align: center;
     display: block;
-    margin-top: 80px;
+    margin-top: 133px;
 
   }
 }
@@ -31,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    margin-right: 77px;
+    margin-right: 266px;
   }
 
   @media (min-width: $desktop-width) {
