@@ -41,6 +41,15 @@
   text-decoration: none;
   transition: color 0.3s ease;
 
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b3b3b3;
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     white-space: nowrap;
     font-size: 18px;
@@ -58,6 +67,15 @@
   color: #111111;
   position: relative;
 
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b3b3b3;
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     &::after {
       content: "";
@@ -67,6 +85,16 @@
       right: 0;
       height: 2px;
       background-color: #68b738;
+      transition: background-color 0.3s ease;
+    }
+
+    &:hover::after {
+      background-color: #5eaa2f;
+    }
+
+    &:active::after {
+      background-color: #5eaa2f;
+      opacity: 0.6;
     }
   }
 

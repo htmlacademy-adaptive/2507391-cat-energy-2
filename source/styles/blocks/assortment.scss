@@ -126,6 +126,7 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  transition: color 0.3s ease;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -138,12 +139,39 @@
     margin-top: 14px;
     margin-left: 4px;
   }
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:hover svg line {
+    stroke: #666666;
+  }
+
+  &:hover svg path {
+    fill: #666666;
+    stroke: #666666;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active svg line {
+    stroke: #b3b3b3;
+  }
+
+  &:active svg path {
+    fill: #b3b3b3;
+    stroke: #b3b3b3;
+    opacity: 0.6;
+  }
 }
 
 .assortment__button svg {
   width: 24px;
   height: 12px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, stroke 0.3s ease, fill 0.3s ease;
 }
 
 .assortment__button:hover svg {

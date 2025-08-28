@@ -22,6 +22,7 @@
 }
 
 .hero__image-container {
+  color: #ffffff;
   min-width: 280px;
   background-position: center top;
   background-image: url("../../images/background-mobile@2x.jpg");
@@ -38,11 +39,16 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .hero__content {
   position: relative;
   z-index: 2;
+  color: #ffffff;
 }
 
 .hero__program {
@@ -73,7 +79,6 @@
     line-height: 60px;
     font-weight: 400;
     margin-bottom: 40px;
-    // width: 414px;
     color: #000000;
     font-family: $font-family-oswald;
   }

@@ -1,42 +1,59 @@
 .example {
-  padding: 25px 0 42px;
+  padding: 55px 0 40px;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
+    padding: 112px 0 100px;
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff 57%,
+      #eaeaea 57%,
+      #eaeaea 100%
+    );
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 0 10px;
     background: linear-gradient(
       to bottom,
-      white 0%,
-      white 30%,
-      #f2f2f2 30%,
+      #ffffff 0%,
+      #ffffff 27%,
+      #f2f2f2 27%,
       #f2f2f2 100%
     );
-    padding-top: 60px;
+  }
+}
+
+.example .container {
+  @media (min-width: $desktop-width) {
+    padding: 60px 0 64px;
+    display: flex;
+    gap: 224px;
   }
 }
 
 .example__container {
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: row;
+    gap: 224px;
+    align-items: flex-start;
   }
 }
 
 .example__content {
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
-    max-width: 436px;
+    text-align: left;
+    width: 436px;
     margin: 0;
+    flex-shrink: 0;
   }
 }
 
@@ -44,22 +61,19 @@
   font-family: $font-family-oswald;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   text-align: left;
   color: #000000;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    font-weight: 400;
-    text-align: left;
-    color: #000000;
-    margin-top: 90px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    text-align: left;
+    margin-bottom: 146px;
   }
 }
 
@@ -70,142 +84,159 @@
   font-weight: 400;
   text-align: left;
   color: #444444;
+  margin: 0 0 20px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 60px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
-    margin-top: 97px;
+    margin-bottom: 69px;
+  }
+}
+
+.example__stats-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
   }
 }
 
 .example__stats {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-    width: 360px;
-    margin-top: 52px;
+    gap: 42px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: left;
-    margin-top: 54px;
     gap: 42px;
   }
 }
 
 .example__stat {
+  position: relative;
+  border: 1px solid #cdcdcd;
   border-radius: 3px;
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
-  border-right: 1px solid #cdcdcd;
-  border-left: 1px solid #cdcdcd;
+  padding: 14px 20px 18px;
+  width: 124px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 15px 20px 10px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    width: 160px;
+    padding: 15px 20px 5px;
   }
 }
 
 .example__number {
   font-family: $font-family-oswald;
   font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 8px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 30px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    line-height: 37px;
+    margin-bottom: 11px;
   }
 }
 
 .example__label {
   font-family: $font-family-lato;
   font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
   color: #444444;
   text-align: center;
+  margin: 0;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #eaeaea;
+  padding: 0 8px;
+  width: max-content;
+  max-width: 80px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background: #ffffff;
+    max-width: 140px;
+    bottom: -6px;
   }
 
   @media (min-width: $desktop-width) {
+    background: #f2f2f2;
   }
 }
 
 .example__cost {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 3px;
   font-family: $font-family-oswald;
-  font-size: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    justify-content: end;
-    margin-top: -168px;
     flex-direction: column;
-    padding: 0;
+    align-items: flex-end;
+    gap: 9px;
+    width: 180px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    gap: 63px;
   }
 }
 
-.example__cost-text {
-  font-family: $font-family-oswald;
-  font-size: 14px;
-  color: #000000;
-  text-align: center;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    text-align: right;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-  }
-}
-
+.example__cost-text,
 .example__cost-value {
-  font-family: $font-family-oswald;
   font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
   color: #000000;
+  margin: 0;
   text-align: center;
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 20px;
     text-align: right;
-    margin-top: 0;
-    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
+// СТИЛИ СЛАЙДЕРА С СОВМЕСТНЫМИ HOVER-ЭФФЕКТАМИ
 .example__slider {
   position: relative;
   width: 100%;
@@ -213,14 +244,49 @@
   margin: 0 auto;
   overflow: hidden;
 
+  // Hover на весь слайдер - меняются обе части
+  &:hover {
+    .example__slider-controls {
+      background-color: #68b738;
+    }
+
+    .example__slider-toggle {
+      border-color: #68b738;
+
+      &::before,
+      &::after {
+        background-color: #68b738;
+      }
+    }
+  }
+
+  // Active на весь слайдер - меняются обе части
+  &:active {
+    .example__slider-controls {
+      background-color: #5eaa2f;
+      opacity: 0.6;
+    }
+
+    .example__slider-toggle {
+      border-color: #5eaa2f;
+      opacity: 0.6;
+
+      &::before,
+      &::after {
+        background-color: #5eaa2f;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 560px;
     height: 512px;
-    margin-top: 94px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin: 0;
+    flex-grow: 1;
+    max-width: none;
   }
 }
 
@@ -228,10 +294,15 @@
   position: relative;
   display: flex;
   width: 100%;
+  height: 100%;
 
   @media (min-width: $tablet-width) {
     max-width: 560px;
     height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
   }
 }
 
@@ -244,20 +315,39 @@
   @media (min-width: $tablet-width) {
     height: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    clip-path: inset(0 50% 0 0);
+  }
+}
+
+.example__slider-after {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: inset(0 0 0 50%);
 }
 
 .example__slider-image {
   display: block;
   width: 100%;
   height: auto;
-  max-width: 280px;
+  width: 280px;
+  max-width: inherit;
 
   @media (min-width: $tablet-width) {
-    max-width: 560px;
+    width: 560px;
+    height: 512px;
+    object-fit: cover;
   }
 
   @media (min-width: $desktop-width) {
-    height: 512px;
+    width: 100%;
   }
 }
 
@@ -271,6 +361,7 @@
   transform: translateX(-50%);
   cursor: col-resize;
   z-index: 10;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .example__slider-toggle {
@@ -285,41 +376,90 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 11;
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 8px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  &::before {
+    left: 1px;
+    border-right: 8px solid #666666;
+  }
+
+  &::after {
+    right: 1px;
+    border-left: 8px solid #666666;
+  }
 
   &:hover {
     border-color: #68b738;
 
-    .example__toggle-icon {
-      background-color: #68b738;
+    &::before {
+      border-right-color: #68b738;
+    }
+
+    &::after {
+      border-left-color: #68b738;
     }
   }
 
   &:active {
     border-color: #5eaa2f;
+    opacity: 0.6;
 
-    .example__toggle-icon {
-      background-color: #5eaa2f;
+    &::before {
+      border-right-color: #5eaa2f;
+    }
+
+    &::after {
+      border-left-color: #5eaa2f;
     }
   }
 }
 
-.example__toggle-icon {
-  display: block;
-  width: 24px;
-  height: 18px;
-  margin: 0 auto;
-  background-color: #666666;
-  mask: url("../../icons/thumb.svg") no-repeat center;
-  -webkit-mask: url("../../icons/thumb.svg") no-repeat center;
-}
+.example__slider {
+  &:hover {
+    .example__slider-controls {
+      background-color: #68b738;
+    }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
+    .example__slider-toggle {
+      border-color: #68b738;
+
+      &::before {
+        border-right-color: #68b738;
+      }
+
+      &::after {
+        border-left-color: #68b738;
+      }
+    }
+  }
+
+  &:active {
+    .example__slider-controls {
+      background-color: #5eaa2f;
+      opacity: 0.6;
+    }
+
+    .example__slider-toggle {
+      border-color: #5eaa2f;
+      opacity: 0.6;
+
+      &::before {
+        border-right-color: #5eaa2f;
+      }
+
+      &::after {
+        border-left-color: #5eaa2f;
+      }
+    }
+  }
 }

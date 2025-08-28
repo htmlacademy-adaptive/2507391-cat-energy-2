@@ -10,7 +10,6 @@
     position: static;
     padding: 53px 0;
   }
-
 }
 
 .header_row {
@@ -51,6 +50,18 @@
   @media (min-width: $desktop-width) {
     gap: 14px;
   }
+}
+
+.header__logo-image {
+  transition: opacity 0.3s ease;
+}
+
+.header__logo-image:hover {
+  opacity: 0.8;
+}
+
+.header__logo-image:active {
+  opacity: 0.6;
 }
 
 .header__logo-image {

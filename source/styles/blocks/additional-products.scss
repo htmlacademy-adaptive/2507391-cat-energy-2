@@ -4,7 +4,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-
+    padding-bottom: 10px;
   }
 }
 
@@ -22,7 +22,7 @@
     grid-template-columns: 3fr 1fr;
     gap: 80px;
     align-items: flex-start;
-
+    padding-top: 8px;
   }
 }
 
@@ -48,17 +48,6 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     margin-top: 20px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: #68b738;
-    z-index: -1;
   }
 }
 
@@ -174,7 +163,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
-    text-align: left;
+    margin-right: 20px;
   }
 }
 
@@ -206,5 +195,21 @@
     margin-top: 0;
     width: 244px;
     justify-self: end;
+    padding: 10px 0;
   }
+}
+
+.additional-products__button {
+  background-color: #68b738;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.additional-products__button:hover {
+  background-color: #5eaa2f;
+}
+
+.additional-products__button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
 }

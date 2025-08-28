@@ -30,10 +30,9 @@
     margin-bottom: 84px;
     margin-top: 13px;
     text-align: left;
-
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     margin-top: 0;
     margin-bottom: 73px;
   }
@@ -43,7 +42,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 4px;
-  // margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
