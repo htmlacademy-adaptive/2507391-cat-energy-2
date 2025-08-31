@@ -1,33 +1,33 @@
 .example {
-  padding: 55px 0 40px;
+  padding: 25px 0 40px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding: 112px 0 100px;
+    padding: 85px 0 100px;
     background: linear-gradient(
       to bottom,
       #ffffff 0%,
-      #ffffff 57%,
-      #eaeaea 57%,
+      #ffffff 658px,
+      #eaeaea 658px,
       #eaeaea 100%
     );
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 10px;
+    padding: 0;
     background: linear-gradient(
       to bottom,
       #ffffff 0%,
-      #ffffff 27%,
-      #f2f2f2 27%,
-      #f2f2f2 100%
+      #ffffff 193px,
+      #eaeaea 193px,
+      #eaeaea 100%
     );
   }
 }
 
 .example .container {
   @media (min-width: $desktop-width) {
-    padding: 60px 0 64px;
+    padding: 60px 0 74px;
     display: flex;
     gap: 224px;
   }
@@ -186,7 +186,8 @@
     line-height: 14px;
     background: #ffffff;
     max-width: 140px;
-    bottom: -6px;
+    // bottom: -6px;
+    top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -236,47 +237,12 @@
   }
 }
 
-// СТИЛИ СЛАЙДЕРА С СОВМЕСТНЫМИ HOVER-ЭФФЕКТАМИ
 .example__slider {
   position: relative;
   width: 100%;
   max-width: 280px;
   margin: 0 auto;
   overflow: hidden;
-
-  // Hover на весь слайдер - меняются обе части
-  &:hover {
-    .example__slider-controls {
-      background-color: #68b738;
-    }
-
-    .example__slider-toggle {
-      border-color: #68b738;
-
-      &::before,
-      &::after {
-        background-color: #68b738;
-      }
-    }
-  }
-
-  // Active на весь слайдер - меняются обе части
-  &:active {
-    .example__slider-controls {
-      background-color: #5eaa2f;
-      opacity: 0.6;
-    }
-
-    .example__slider-toggle {
-      border-color: #5eaa2f;
-      opacity: 0.6;
-
-      &::before,
-      &::after {
-        background-color: #5eaa2f;
-      }
-    }
-  }
 
   @media (min-width: $tablet-width) {
     max-width: 560px;

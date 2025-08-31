@@ -1,6 +1,11 @@
 .advantages {
   min-height: 380px;
   min-width: 280px;
+  padding-bottom: 29px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title {
