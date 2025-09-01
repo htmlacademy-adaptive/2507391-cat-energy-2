@@ -12,7 +12,7 @@
   }
 }
 
-.header_row {
+.header__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +43,7 @@
     right: 0;
     top: 0;
     background-image: image-set(
-      url("../../images/background-cat.jpg") 1x,
+      url("../../images/background-cat@1x.jpg") 1x,
       url("../../images/background-cat@2x.jpg") 2x
     );
     background-repeat: no-repeat;
